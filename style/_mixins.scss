@@ -1,0 +1,55 @@
+@import  "_volunteer";
+@import  "_about";
+@mixin primary-btn($bg , $color) {
+    background: $bg;
+    font-size: 16px;
+    color: $color;
+    font-weight: 500;  
+    display: block;
+    transition: .3s;
+    border: none;
+    outline: none;
+    &:hover{
+            background: #fafafa;
+            color: $primary-color;
+        }
+}
+
+@mixin blakish {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.562);
+}
+
+@mixin heading {
+    font-weight: 700;
+    color: $blueish;
+    font-size: 54px;
+    font-size: 41px;
+    position: relative;
+    
+}
+// @mixin before_and_after{
+//     &::before{
+//     content: "";
+//     position: absolute;
+//     background: #D6151F;
+//     height: 6px;
+//     width: 70px;
+//     bottom: -22px;
+//     margin-left: 211px;
+// }
+//     &::after{
+//     content: "";
+//     position: absolute;
+//     background: #ab8f8f;
+//     height: 2px;
+//     width: 210px;
+//     bottom: -20px;
+//     margin-left: -345px;
+//     z-index: -1;
+// }
+// }
